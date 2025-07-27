@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson Liu – AI Project Portfolio</title>
+    <!--
+      This site is intentionally lightweight and easy to edit.
+      When you make progress on one of your projects, simply update the
+      corresponding section below. The navigation menu links will scroll to
+      each section on the page. To add a new project, duplicate one of the
+      existing <section> blocks and adjust the id, heading and content.
+    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Hero section with an abstract AI‑themed header image.  The image
+             lives in the images/ folder and can be replaced with your own.
+             If you use a different filename, be sure to update the src attribute. -->
+        <div class="hero">
+            <img src="images/header.png" alt="abstract AI background">
+            <div class="hero-text">
+                <h1>Johnson Liu</h1>
+                <p>AI Projects Portfolio</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sarcasm">Sarcasm Detection</a></li>
+            <li><a href="#dominion">AI for Dominion</a></li>
+            <li><a href="#inquisitor">InquisitorNet</a></li>
+            <li><a href="#about">About Me</a></li>
+        </ul>
+    </nav>
+    <main>
+        <!-- Sarcasm Detection Project -->
+        <section id="sarcasm">
+            <h2>Sarcasm Detection &amp; Sentiment Analysis</h2>
+            <p>
+                This project explores how natural language processing can be used
+                to recognise sarcastic intent in informal text.  By training
+                neural network models on a dataset of labelled Reddit comments,
+                the goal is to distinguish between sarcastic and sincere
+                statements.  In future iterations the scope will expand to
+                general sentiment analysis and even multimodal input (e.g.
+                combining images and text).
+            </p>
+            <ul>
+                <li>Goal: build models that classify social‑media comments as
+                    sarcastic or sincere.</li>
+                <li>Current progress: preprocessing a large Kaggle dataset and
+                    training feedforward, convolutional and recurrent neural
+                    networks to detect sarcasm in Reddit comments.</li>
+                <li>Future plans: extend the models to general sentiment
+                    analysis and explore multimodal inputs that combine text
+                    with images.</li>
+            </ul>
+            <p>
+                <a href="https://github.com/johnson-liu-code/Sarcasm_Detector" target="_blank" rel="noopener">View the code on GitHub</a>
+            </p>
+        </section>
+        <!-- AI for Dominion Project -->
+        <section id="dominion">
+            <h2>AI for Dominion</h2>
+            <p>
+                Dominion is a deck‑building card game with a complex state
+                space.  This project applies reinforcement learning to train
+                bots to play the game efficiently.  Key design decisions
+                include whether to use a fixed or dynamic action space and how
+                to structure the Q‑learning architecture for the distinct
+                action and buy phases of the game.  The work is built on top
+                of the open‑source <em>Pyminion</em> engine.
+            </p>
+            <ul>
+                <li>Goal: develop reinforcement‑learning agents that can play
+                    Dominion autonomously.</li>
+                <li>Current progress: experimenting with fixed versus dynamic
+                    action spaces and implementing Deep Q‑Learning models to
+                    learn optimal strategies.</li>
+                <li>Future plans: explore curriculum learning strategies and
+                    compare multi‑headed versus single‑policy networks for
+                    handling the action and buy phases.</li>
+            </ul>
+            <p>
+                <a href="https://github.com/johnson-liu-code/Dominion_AI_ML" target="_blank" rel="noopener">View the code on GitHub</a>
+            </p>
+        </section>
+        <!-- InquisitorNet Project -->
+        <section id="inquisitor">
+            <h2>InquisitorNet – Warhammer 40K Bot</h2>
+            <p>
+                InquisitorNet is a prototype network of AI‑driven bots inspired
+                by the Warhammer 40K universe.  Written in Python using the
+                Reddit API (<code>praw</code>) and OpenAI's language models,
+                each bot adopts the personality of an Imperial Inquisitor and
+                engages with community posts.  The project includes modules
+                for logging, encryption, scheduling and database storage,
+                providing a foundation for more elaborate behaviour in later
+                phases.
+            </p>
+            <ul>
+                <li>Goal: create a network of thematic Reddit bots that post
+                    and respond as Warhammer 40K Inquisitors.</li>
+                <li>Current progress: implemented character personalities,
+                    memory and logging via SQLite, encryption utilities and
+                    scheduling routines for posting and responding.</li>
+                <li>Future plans: expand the bot network to include
+                    multi‑agent coordination and integrate analysis of
+                    conversations across multiple posts.</li>
+            </ul>
+            <p>
+                <a href="https://github.com/johnson-liu-code/InquisitorNet" target="_blank" rel="noopener">View the code on GitHub</a>
+            </p>
+        </section>
+        <!-- About Me -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Johnson Liu.  I currently serve as a mathematics
+                tutor at Diablo Valley College and am deeply interested in
+                artificial intelligence and machine learning.  These projects
+                represent my ongoing efforts to explore natural language
+                processing, reinforcement learning and creative applications of
+                AI.  I plan to continue refining these projects while
+                pursuing graduate studies in this field.
+            </p>
+            <p>
+                <strong>Contact:</strong> <a href="mailto:liujohnson.jl@gmail.com">liujohnson.jl@gmail.com</a>
+                &nbsp;•&nbsp;
+                <a href="https://github.com/johnson-liu-code" target="_blank" rel="noopener">GitHub Profile</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Last updated 25 July 2025 • Site hosted with GitHub Pages</p>
+    </footer>
+</body>
+</html>
