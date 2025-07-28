@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson Liu — AI Project Portfolio</title>
+    <!--
+      This site is intentionally lightweight and easy to edit.
+      When you make progress on one of your projects, simply update the
+      corresponding section below. The navigation menu links will scroll to
+      each section on the page. To add a new project, duplicate one of the
+      existing <section> blocks and adjust the id, heading and content.
+    -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="hero">
+            <img src="images/header.png" alt="header_image">
+            <div class="hero-text">
+                <h1>Johnson Liu</h1>
+                <p>AI Projects Portfolio</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <a href="home.html">Home</a>
+            <a href="sentiment_analysis/sentiment.html">Sentiment Analysis</a>
+            <a href="dominion_ai/dominion.html">Dominion AI</a>
+            <a href="inquisitorNet/inquisitor.html">InquisitorNet</a>
+        </ul>
+    </nav>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                My name is Johnson Liu. I currently serve as a mathematics
+                tutor at Diablo Valley College and am deeply interested in
+                artificial intelligence and machine learning.  These projects
+                represent my ongoing efforts to explore natural language
+                processing, reinforcement learning and creative applications of
+                AI.  I plan to continue refining these projects while
+                pursuing graduate studies in this field.
+            </p>
+            <p>
+                <strong>Contact:</strong> <a href="mailto:liujohnson.jl@gmail.com">liujohnson.jl@gmail.com</a>
+                &nbsp;•&nbsp;
+                <a href="https://github.com/johnson-liu-code" target="_blank" rel="noopener">GitHub Profile</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>Last updated 28 July 2025 • Site hosted with GitHub Pages</p>
+    </footer>
+
+    <script>
+    document.querySelectorAll("nav a").forEach(link => {
+        // Compare just the pathname (so query‑strings or domain don’t matter)
+        if (link.pathname === window.location.pathname) {
+        link.classList.add("active");
+        }
+    });
+    </script>
+
+</body>
+</html>

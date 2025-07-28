@@ -80,6 +80,12 @@ nav a {
     transition: background-color 0.2s ease;
 }
 
+nav a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
 nav a:hover,
 nav a:focus {
     background-color: #004080;
