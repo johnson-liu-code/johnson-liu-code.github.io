@@ -3,59 +3,62 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://johnson-liu-code.github.io/projects/">
-    <title>Johnson Liu — AI Project Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>Johnson Liu - AI Project Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="hero">
-            <img src="/images/header.png" alt="header_image">
+            <img src="images/header.png" alt="AI-themed banner">
             <div class="hero-text">
                 <h1>Johnson Liu</h1>
                 <p>AI Projects Portfolio</p>
             </div>
         </div>
     </header>
-    <nav>
+
+    <div class="content">
+        <nav>
         <ul>
-            <a href="/home.html">Home</a>
-            <a href="/projects/sentiment_analysis/sentiment.html">Sentiment Analysis</a>
-            <a href="/projects/dominion_ai/dominion.html">Dominion AI</a>
-            <a href="/projects/inquisitorNet/inquisitor.html">InquisitorNet</a>
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="projects/sentiment_analysis/sentiment.html">Sentiment Analysis</a></li>
+            <li><a href="projects/dominion_ai/dominion.html">Dominion AI</a></li>
+            <li><a href="projects/inquisitorNet/inquisitor.html">InquisitorNet</a></li>
         </ul>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>
-                My name is Johnson Liu. I currently serve as a mathematics
-                tutor at Diablo Valley College and am deeply interested in
-                artificial intelligence and machine learning.  These projects
-                represent my ongoing efforts to explore natural language
-                processing, reinforcement learning and creative applications of
-                AI.  I plan to continue refining these projects while
-                pursuing graduate studies in this field.
-            </p>
-            <p>
-                <strong>Contact:</strong> <a href="mailto:liujohnson.jl@gmail.com">liujohnson.jl@gmail.com</a>
-                &nbsp;•&nbsp;
-                <a href="https://github.com/johnson-liu-code" target="_blank" rel="noopener">GitHub Profile</a>
-            </p>
-        </section>
-    </main>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    My name is Johnson Liu. I currently serve as a mathematics
+                    tutor at Diablo Valley College and am deeply interested in
+                    artificial intelligence and machine learning.  These projects
+                    represent my ongoing efforts to explore natural language
+                    processing, reinforcement learning and creative applications of
+                    AI.  I plan to continue refining these projects while
+                    pursuing graduate studies in this field.
+                </p>
+                <p>
+                    <strong>Contact:</strong> <a href="mailto:liujohnson.jl@gmail.com">liujohnson.jl@gmail.com</a>
+                    &nbsp;•&nbsp;
+                    <a href="https://github.com/johnson-liu-code" target="_blank" rel="noopener">GitHub Profile</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
     <footer>
         <p>Last updated 28 July 2025 • Site hosted with GitHub Pages</p>
     </footer>
 
     <script>
-    document.querySelectorAll("nav a").forEach(link => {
-        // Compare just the pathname (so query‑strings or domain don’t matter)
-        if (link.pathname === window.location.pathname) {
-        link.classList.add("active");
-        }
-    });
+        // auto‑highlight the current link
+        document.querySelectorAll("nav a").forEach(link => {
+        if (link.pathname.endsWith(window.location.pathname.split('/').pop())) {
+            link.classList.add("active");
+            }
+        });
     </script>
-
 </body>
 </html>

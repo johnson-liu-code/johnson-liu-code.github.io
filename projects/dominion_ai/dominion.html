@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://johnson-liu-code.github.io/projects/">
+    <base href="https://johnson-liu-code.github.io">
     <title>Johnson Liu — AI Project Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -17,41 +17,46 @@
             </div>
         </div>
     </header>
-    <nav>
+
+    <div class="content">
+        <nav>
         <ul>
-            <a href="/home.html">Home</a>
-            <a href="/projects/sentiment_analysis/sentiment.html">Sentiment Analysis</a>
-            <a href="/projects/dominion_ai/dominion.html" class="active">Dominion AI</a>
-            <a href="/projects/inquisitorNet/inquisitor.html">InquisitorNet</a>
+            <li><a href="/home.html" class="active">Home</a></li>
+            <li><a href="/projects/sentiment_analysis/sentiment.html">Sentiment Analysis</a></li>
+            <li><a href="/projects/dominion_ai/dominion.html">Dominion AI</a></li>
+            <li><a href="/projects/inquisitorNet/inquisitor.html">InquisitorNet</a></li>
         </ul>
-    </nav>
-    <main>
-        <section id="dominion">
-            <h2>Dominion AI</h2>
-            <p>
-                Dominion is a deck—building card game with a complex state
-                space.  This project applies reinforcement learning to train
-                bots to play the game efficiently.  Key design decisions
-                include whether to use a fixed or dynamic action space and how
-                to structure the Q—learning architecture for the distinct
-                action and buy phases of the game.  The work is built on top
-                of the open—source <em>Pyminion</em> engine.
-            </p>
-            <ul>
-                <li>Goal: develop reinforcement—learning agents that can play
-                    Dominion autonomously.</li>
-                <li>Current progress: experimenting with fixed versus dynamic
-                    action spaces and implementing Deep Q—Learning models to
-                    learn optimal strategies.</li>
-                <li>Future plans: explore curriculum learning strategies and
-                    compare multi—headed versus single—policy networks for
-                    handling the action and buy phases.</li>
-            </ul>
-            <p>
-                <a href="https://github.com/johnson-liu-code/Dominion_AI_ML" target="_blank" rel="noopener">View the code on GitHub</a>
-            </p>
-        </section>
-    </main>
+        </nav>
+
+        <main>
+            <section id="dominion">
+                <h2>Dominion AI</h2>
+                <p>
+                    Dominion is a deck—building card game with a complex state
+                    space.  This project applies reinforcement learning to train
+                    bots to play the game efficiently.  Key design decisions
+                    include whether to use a fixed or dynamic action space and how
+                    to structure the Q—learning architecture for the distinct
+                    action and buy phases of the game.  The work is built on top
+                    of the open—source <em>Pyminion</em> engine.
+                </p>
+                <ul>
+                    <li>Goal: develop reinforcement—learning agents that can play
+                        Dominion autonomously.</li>
+                    <li>Current progress: experimenting with fixed versus dynamic
+                        action spaces and implementing Deep Q—Learning models to
+                        learn optimal strategies.</li>
+                    <li>Future plans: explore curriculum learning strategies and
+                        compare multi—headed versus single—policy networks for
+                        handling the action and buy phases.</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/johnson-liu-code/Dominion_AI_ML" target="_blank" rel="noopener">View the code on GitHub</a>
+                </p>
+            </section>
+        </main>
+    </div>
+
     <footer>
         <p>Last updated 28 July 2025 • Site hosted with GitHub Pages</p>
     </footer>

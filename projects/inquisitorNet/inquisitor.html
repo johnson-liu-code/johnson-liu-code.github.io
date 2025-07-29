@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://johnson-liu-code.github.io/projects/">
+    <base href="https://johnson-liu-code.github.io">
     <title>Johnson Liu — AI Project Portfolio</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -17,43 +17,47 @@
             </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <a href="/home.html">Home</a>
-            <a href="/projects/sentiment_analysis/sentiment.html">Sentiment Analysis</a>
-            <a href="/projects/dominion_ai/dominion.html">Dominion AI</a>
-            <a href="/projects/inquisitorNet/inquisitor.html" class="active">InquisitorNet</a>
-        </ul>
-    </nav>
-    <main>
-        <section id="inquisitor">
-            <h2>InquisitorNet — Warhammer 40K Roleplaying Bots</h2>
-            <p>
-                InquisitorNet is a prototype network of AI—driven bots inspired
-                by the Warhammer 40K universe.  Written in Python using the
-                Reddit API (<code>praw</code>) and OpenAI's language models,
-                each bot adopts the personality of an Imperial Inquisitor and
-                engages with community posts.  The project includes modules
-                for logging, encryption, scheduling and database storage,
-                providing a foundation for more elaborate behaviour in later
-                phases.
-            </p>
-            <ul>
-                <li>Goal: create a network of thematic Reddit bots that post
-                    and respond as Warhammer 40K Inquisitors.</li>
-                <li>Current progress: implemented character personalities,
-                    memory and logging via SQLite, encryption utilities and
-                    scheduling routines for posting and responding.</li>
-                <li>Future plans: expand the bot network to include
-                    multi—agent coordination and integrate analysis of
-                    conversations across multiple posts.</li>
-            </ul>
-            <p>
-                <a href="https://github.com/johnson-liu-code/InquisitorNet" target="_blank" rel="noopener">View the code on GitHub</a>
-            </p>
-        </section>
 
-    </main>
+    <div class="content">
+        <nav>
+        <ul>
+            <li><a href="/home.html" class="active">Home</a></li>
+            <li><a href="/projects/sentiment_analysis/sentiment.html">Sentiment Analysis</a></li>
+            <li><a href="/projects/dominion_ai/dominion.html">Dominion AI</a></li>
+            <li><a href="/projects/inquisitorNet/inquisitor.html">InquisitorNet</a></li>
+        </ul>
+        </nav>
+        <main>
+            <section id="inquisitor">
+                <h2>InquisitorNet — Warhammer 40K Roleplaying Bots</h2>
+                <p>
+                    InquisitorNet is a prototype network of AI—driven bots inspired
+                    by the Warhammer 40K universe.  Written in Python using the
+                    Reddit API (<code>praw</code>) and OpenAI's language models,
+                    each bot adopts the personality of an Imperial Inquisitor and
+                    engages with community posts.  The project includes modules
+                    for logging, encryption, scheduling and database storage,
+                    providing a foundation for more elaborate behaviour in later
+                    phases.
+                </p>
+                <ul>
+                    <li>Goal: create a network of thematic Reddit bots that post
+                        and respond as Warhammer 40K Inquisitors.</li>
+                    <li>Current progress: implemented character personalities,
+                        memory and logging via SQLite, encryption utilities and
+                        scheduling routines for posting and responding.</li>
+                    <li>Future plans: expand the bot network to include
+                        multi—agent coordination and integrate analysis of
+                        conversations across multiple posts.</li>
+                </ul>
+                <p>
+                    <a href="https://github.com/johnson-liu-code/InquisitorNet" target="_blank" rel="noopener">View the code on GitHub</a>
+                </p>
+            </section>
+
+        </main>
+    </div>
+
     <footer>
         <p>Last updated 28 July 2025 • Site hosted with GitHub Pages</p>
     </footer>
