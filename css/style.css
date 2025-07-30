@@ -20,45 +20,53 @@ section {
 }
 
 section h2 {
-    margin-top: 0;
-    color: #003366;
+  margin-top: 0;
+  color: #003366;
 }
 
 section p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 section ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 section li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 section a {
-    color: #004080;
-    text-decoration: underline;
-    transition: color 0.2s ease;
+  color: #004080;
+  text-decoration: underline;
+  transition: color 0.2s ease;
 }
 
 section a:hover,
 section a:focus {
-    color: #00264d;
+  color: #00264d;
 }
 
 /* Hero banner */
-.hero {
+/* .hero {
   position: relative;
   width: 100%;
   height: 320px;
   overflow: hidden;
-}
-.hero img {
+} */
+/* ─────── Hero banner ─────── */
+.hero {
+/* no fixed height—let the image size itself */
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
+
+.hero img {
+  display: block;     /* remove inline gaps */
+  width: 100%;        /* fill the screen width */
+  height: auto;       /* scale height to preserve aspect */
+  object-fit: none;   /* don’t crop or letter‑box */
+}
+
 .hero-text {
   position: absolute;
   top: 50%;
@@ -77,6 +85,11 @@ section a:focus {
 .hero-text p {
   margin: 0;
   font-size: 1.2rem;
+}
+
+/* make the header full‑width and leave its height intact */
+header {
+  width: 100%;
 }
 
 /* Sidebar navigation (scoped only to .content nav) */
@@ -114,17 +127,20 @@ section a:focus {
 /* Two‑column layout below the hero */
 .content {
   display: flex;
-  min-height: calc(100vh - 320px); /* subtract header height */
+  background-color: white;
+  min-height: calc(100vh - 320px);
 }
 .content main {
   flex: 1;
   padding: 1.5rem;
+  background-color: white;      /* reinforce the white backdrop */
+  text-align: justify;          /* your justified text */
+  text-justify: inter-word;
 }
 
-/* make the header full‑width and leave its height intact */
-header {
-  width: 100%;
-  /* whatever height your .hero already uses */
+.content main p {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /* Footer */
