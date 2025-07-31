@@ -47,25 +47,24 @@ section a:focus {
   color: #00264d;
 }
 
-/* Hero banner */
-/* .hero {
-  position: relative;
-  width: 100%;
-  height: 320px;
-  overflow: hidden;
-} */
-/* ─────── Hero banner ─────── */
-.hero {
-/* no fixed height—let the image size itself */
+/* make the header full‑width and leave its height intact */
+header {
   width: 100%;
 }
 
-.hero img {
-  display: block;     /* remove inline gaps */
-  width: 100%;        /* fill the screen width */
-  height: auto;       /* scale height to preserve aspect */
-  object-fit: none;   /* don’t crop or letter‑box */
+/* .hero {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+} */
 
 .hero-text {
   position: absolute;
@@ -87,10 +86,30 @@ section a:focus {
   font-size: 1.2rem;
 }
 
-/* make the header full‑width and leave its height intact */
-header {
+/* ─── New bottom‑banner styles ─── */
+.bottom-banner {
+  position: relative;
   width: 100%;
+  margin-top: 2rem;       /* space above banner */
 }
+.bottom-banner img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.bottom-banner .hero-text {
+  position: absolute;     /* if you still want text overlay */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+
 
 /* Sidebar navigation (scoped only to .content nav) */
 .content nav {
@@ -130,6 +149,8 @@ header {
   background-color: white;
   min-height: calc(100vh - 320px);
 }
+ 
+
 .content main {
   flex: 1;
   padding: 1.5rem;
