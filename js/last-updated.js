@@ -62,9 +62,9 @@
     let display = '';
     const iso = await fetchLastCommitDate(owner, repo, filePath);
     if (iso) {
-      display = `Last updated: ${formatDate(iso)}`;
+      display = `Last updated ... ${formatDate(iso)}`;
     } else if (fallbackToNow) {
-      display = `Last updated: ${formatDate(new Date().toISOString())}`;
+      display = `Last updated ... ${formatDate(new Date().toISOString())}`;
     } else {
       display = 'Last updated: unknown';
     }

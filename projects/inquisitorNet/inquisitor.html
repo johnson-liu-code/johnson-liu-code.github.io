@@ -74,15 +74,30 @@
         </main>
     </div>
 
-    <header>
-        <div class="bottom-banner">
-            <img src="inquisitor.png" alt="inquisitor_header_image">
+    <footer>
+    <p>
+        <span id="last-updated">Loading last updated ...</span> • Site hosted with GitHub Pages
+    </p>
+    <div class="bottom-banner">
+        <div class="hero">
+            <img src="inquisitor.png" alt="inquisitor_footer_image">
         </div>
     </div>
-
-    <footer>
-        <p>Last updated 28 July 2025 • Site hosted with GitHub Pages</p>
     </footer>
+
+    <script src="/js/last-updated.js"></script>
+    <script>
+
+    const repoRelativePath = window.location.pathname.replace(/^\//, '');
+
+    updateLastUpdated({
+        elementId: 'last-updated',
+        owner: 'johnson-liu-code',
+        repo: 'johnson-liu-code.github.io',
+        filePath: repoRelativePath,
+        fallbackToNow: true
+    });
+    </script>
         
     <script>
     document.querySelectorAll("nav a").forEach(link => {
