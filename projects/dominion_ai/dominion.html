@@ -21,6 +21,10 @@
         <main>
             <section id="dominion">
                 <h2>Dominion AI</h2>
+                <h3><i>
+                    Work in Progress <br> 
+                    June — Present
+                </i></h3>
                 <p>
                     Dominion is a deck—building card game with a complex state
                     space.  This project applies reinforcement learning to train
@@ -53,9 +57,31 @@
         </div>
     </div>
 
-    <footer>
+    <!-- <footer>
         <p>Last updated 28 July 2025 • Site hosted with GitHub Pages</p>
+    </footer> -->
+
+    <footer>
+    <p>
+        <span id="last-updated">Loading last updated...</span> • Site hosted with GitHub Pages
+    </p>
     </footer>
+
+    <script src="/js/last-updated.js"></script>
+    <script>
+    // Derive the file path as it exists in the repo.
+    // If your site is serving from "projects/" and the HTML is at /projects/sentiment_analysis/sentiment.html,
+    // then the repo path is "projects/sentiment_analysis/sentiment.html"
+    const repoRelativePath = window.location.pathname.replace(/^\//, ''); // e.g., "projects/sentiment_analysis/sentiment.html"
+
+    updateLastUpdated({
+        elementId: 'last-updated',
+        owner: 'johnson-liu-code',
+        repo: 'johnson-liu-code.github.io',
+        filePath: repoRelativePath,
+        fallbackToNow: true
+    });
+    </script>
 
     <script>
     document.querySelectorAll("nav a").forEach(link => {
