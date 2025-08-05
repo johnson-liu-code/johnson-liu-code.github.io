@@ -47,15 +47,14 @@ section a:focus {
   color: #00264d;
 }
 
-/* make the header full‑width and leave its height intact */
 header {
   width: 100%;
 }
 
-/* .hero {
+.hero {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -64,7 +63,7 @@ header {
   height: 100%;
   object-fit: cover;
   object-position: center;
-} */
+}
 
 .hero-text {
   position: absolute;
@@ -74,13 +73,15 @@ header {
   text-align: center;
   color: #fff;
   background-color: rgba(0,0,0,0.5);
-  padding: 20px 30px;
+  padding: 1rem 2rem;
   border-radius: 8px;
 }
+
 .hero-text h1 {
   margin: 0;
   font-size: 2.5rem;
 }
+
 .hero-text p {
   margin: 0;
   font-size: 1.2rem;
