@@ -100,7 +100,7 @@ header {
   object-fit: cover;
 }
 .bottom-banner .hero-text {
-  position: absolute;     /* if you still want text overlay */
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
