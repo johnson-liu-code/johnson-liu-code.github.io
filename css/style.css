@@ -6,10 +6,25 @@ body {
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
+  color: var(--text);
+  line-height: 1.75;     /* improved readability */
   background-color: #f9f9f9;
 }
+
+/* ——— Color variables & typography tweaks ——— */
+:root {
+  --primary: #003366;
+  --dark: #00264d;
+  --accent: #00796b;    /* teal accent */
+  --text: #333;
+}
+
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; color: var(--primary); }
+h3 { font-size: 1.5rem; margin-top: 1rem; color: var(--primary); }
+
+
 
 section {
     margin-bottom: 40px;
@@ -54,7 +69,7 @@ header {
 .hero {
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -72,7 +87,8 @@ header {
   transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.852);
+  /* background: linear-gradient(to bottom, rgba(0,0,0,.4), rgba(0,0,0,0)); */
   padding: 1rem 2rem;
   border-radius: 8px;
 }
@@ -93,12 +109,11 @@ header {
   width: 100%;
   margin-top: 2rem;       /* space above banner */
 }
+
 .bottom-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  object-fit: contain; 
 }
+
 .bottom-banner .hero-text {
   position: absolute;
   top: 50%;
@@ -108,6 +123,43 @@ header {
   background: rgba(0,0,0,0.5);
   padding: 0.5rem 1rem;
   border-radius: 4px;
+}
+
+/* ——— Card-based grid on home page ——— */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.project-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
+  color: inherit;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.project-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.project-card h3 {
+  margin: 0.75rem 1rem 0.25rem;
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+.project-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 
@@ -186,4 +238,16 @@ footer {
   }
   .content nav a { padding: 0.75rem 1rem; }
   .content main { padding: 1rem; }
+}
+
+/* ——— Mobile nav & spacing tweaks ——— */
+@media (max-width: 600px) {
+  .content nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .content main {
+    padding: 1rem;
+  }
 }
