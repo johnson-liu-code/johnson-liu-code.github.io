@@ -6,10 +6,17 @@ body {
   font-family:
     -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
+  font-size: 1rem;
   color: var(--text);
   line-height: 1.75;     /* improved readability */
   background-color: #f9f9f9;
 }
+
+/* html { font-size: 18px; } */
+html { font-size: clamp(16px, 1rem + 0.25vw, 18px); }
+
+p, li { font-size: 1rem; }
+
 
 /* ——— Color variables & typography tweaks ——— */
 :root {
@@ -128,10 +135,11 @@ header {
 /* ——— Card-based grid on home page ——— */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);   /* force exactly two columns */
+  gap: 1.5rem;                             /* space between cards */
   margin: 2rem 0;
 }
+
 
 .project-card {
   background: white;
@@ -141,16 +149,20 @@ header {
   color: inherit;
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 1rem;              /* adds space on all sides */
+  box-sizing: border-box;
 }
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 .project-card img {
-  width: 100%;
+  margin: -1rem -1rem 1rem;  /* pull the image full-width, but keep text padded */
+  width: calc(100% + 2rem);
   height: 140px;
   object-fit: cover;
 }
+
 .project-card h3 {
   margin: 0.75rem 1rem 0.25rem;
   font-size: 1.25rem;
@@ -160,6 +172,12 @@ header {
   margin: 0 1rem 1rem;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.project-card ul {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -250,4 +268,39 @@ footer {
   .content main {
     padding: 1rem;
   }
+}
+
+
+.project-header {
+  display: flex;
+  align-items: top;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;    /* lets image drop below text if screen is narrow */
+}
+
+.project-header__text {
+  flex: 1 1 300px;    /* text column grows first, but won’t shrink below 300px */
+  text-align: left;
+}
+
+.project-header__img img {
+  max-width: 400px;   /* set your desired max width for the header image */
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.project-header__text h2 {
+  margin-bottom: 0;      /* remove extra space below h2 */
+  line-height: 1.1;      /* tighten space between title and <br> */
+}
+
+.project-header__text h2 .subtitle {
+  display: block;        /* make sure it starts on a new line */
+  font-size: 0.7em;      /* smaller than the title */
+  line-height: 1.2;      /* tighter spacing if subtitle wraps */
+  margin-top: 0.2em;     /* small gap between title and subtitle */
+  font-weight: normal;  /* optional: makes it lighter */
 }
