@@ -12,8 +12,7 @@ body {
   background-color: #f9f9f9;
 }
 
-/* html { font-size: 18px; } */
-html { font-size: clamp(16px, 1rem + 0.25vw, 18px); }
+html { font-size: 18px; }
 
 p, li { font-size: 1rem; }
 
