@@ -134,7 +134,7 @@ header {
 /* ——— Card-based grid on home page ——— */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);   /* force exactly two columns */
+  grid-template-columns: repeat(2, 1fr) !important;   /* force exactly two columns */
   gap: 1.5rem;                             /* space between cards */
   margin: 2rem 0;
 }
