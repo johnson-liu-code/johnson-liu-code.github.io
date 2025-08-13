@@ -23,27 +23,26 @@
         <nav>
         <ul>
             <li><a href="../../home.html">Home</a></li>
-            <li><a href="../llm_jailbreak/llm_jailbreak.html">LLM Jailbreak</a></li>
+            <li><a href="llm_jailbreak.html">LLM Jailbreak</a></li>
             <li><a href="../sentiment_analysis/sentiment.html">Sentiment Analysis</a></li>
             <li><a href="../dominion_ai/dominion.html">Dominion AI</a></li>
             <li><a href="../inquisitorNet/inquisitor.html">InquisitorNet</a></li>
-            <li><a href="civicsim.html">CivicSim</a></li>
+            <li><a href="../civicsim/civicsim.html">CivicSim</a></li>
             <li><a href="../scp/scp.html">SCP Wiki Entries</a></li>
         </ul>
         </nav>
-
         <main>
             <section class="project-header">
                 <div class="project-header__text">
                     <h2>
-                        CivicSim<br>
-                        <span class="subtitle">Patreon project</span>
+                        Large Language Model Jailbreak Stress Testing Dashboard<br>
+                        <span class="subtitle">An interactive dashboard for stress-testing LLMs</span>
                     </h2>
                     <br>
                     – Work in Progress –
-                    <!-- <p>
-                        <a href="https://github.com/johnson-liu-code/Sarcasm_Detector" target="_blank" rel="noopener">View the code on GitHub</a>
-                    </p> -->
+                    <p>
+                        <!-- <a href="https://github.com/johnson-liu-code/InquisitorNet" target="_blank" rel="noopener">View the code on GitHub</a> -->
+                    </p>
                     <p>
                         text here blah blah blah blah blah blah blah blah.
                         text here blah blah blah blah blah blah blah blah.
@@ -53,7 +52,7 @@
                     </p>
                 </div>
                 <div class="project-header__img">
-                    <img src="civicsim.png" alt="civicsim image">
+                    <img src="llm_jailbreak.png" alt="llm Jailbreak image">
                 </div>
             </section>
 
@@ -70,9 +69,17 @@
                     text here blah blah blah blah blah blah blah blah.
                 </p>
                 <ul>
-                    <li>Goal:</li>
-                    <li>Current progress:</li>
-                    <li>Future plans:</li>
+                    <li>Goal:<br>
+                        create a network of thematic Reddit bots that post
+                        and respond as Warhammer 40K Inquisitors.</li>
+                    <li>Current progress:<br>
+                        implemented character personalities,
+                        memory and logging via SQLite, encryption utilities and
+                        scheduling routines for posting and responding.</li>
+                    <li>Future plans:<br>
+                        expand the bot network to include
+                        multi—agent coordination and integrate analysis of
+                        conversations across multiple posts.</li>
                 </ul>
 
                 <br>
@@ -85,9 +92,7 @@
                 </p>
 
             </section>
-
         </main>
-
     </div>
 
     <footer>
@@ -109,7 +114,7 @@
         fallbackToNow: true
     });
     </script>
-    
+        
     <script>
     document.querySelectorAll("nav a").forEach(link => {
         // Compare just the pathname (so query‑strings or domain don’t matter)
