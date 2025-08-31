@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johnson Liu — AI Project Portfolio</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="hero">
+            <img src="../../home_images/ising_loop.gif" alt="ising_evolution_animation">
+            <div class="hero-text">
+                <h1>Johnson Liu</h1>
+                <p>Projects Portfolio</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <nav>
+        <ul>
+            <li><a href="../../home.html">Home</a></li>
+            <li><a href="../llm_jailbreak/llm_jailbreak.html">LLM Jailbreak</a></li>
+            <li><a href="../sentiment_analysis/sentiment.html">Sentiment Analysis</a></li>
+            <li><a href="../dominion_ai/dominion.html">Dominion AI</a></li>
+            <li><a href="../inquisitorNet/inquisitor.html">InquisitorNet</a></li>
+            <li><a href="../civicsim/civicsim.html">CivicSim</a></li>
+            <li><a href="../scp/scp.html">SCP Wiki Entries</a></li>
+        </ul>
+        </nav>
+
+        <main>
+            <section class="project-header">
+                <div class="project-header__text">
+                    <h2>
+                        Undergraduate Projects<br>
+                        <span class="subtitle">—Some of the projects that I worked on as an
+                                                undergraduate student at University of 
+                                                the Pacific</span>
+                    </h2>
+
+                    <br>
+
+                    <hr>
+                    
+                    <p style="text-align: center"></p>
+
+                    <p>
+                        Past undergraduate projects.
+                    </p>
+                </div>
+                <div class="project-header__img">
+                    <img src="" alt="">
+                </div>
+            </section>
+
+            <embed
+                src="Wang_2017.pdf"
+                type="application/pdf"
+                frameBorder="0"
+                scrolling="auto"
+                height="80%"
+                width="80%"
+            ></embed>
+
+            <embed
+                src="Hutter_2019.pdf"
+                type="application/pdf"
+                frameBorder="0"
+                scrolling="auto"
+                height="80%"
+                width="80%"
+            ></embed>
+
+            <embed
+                src="Dutoi_2016.pdf"
+                type="application/pdf"
+                frameBorder="0"
+                scrolling="auto"
+                height="80%"
+                width="80%"
+            ></embed>
+
+            <embed
+                src="Dutoi_2015.pdf"
+                type="application/pdf"
+                frameBorder="0"
+                scrolling="auto"
+                height="80%"
+                width="80%"
+            ></embed>
+
+            <section>
+                <p>
+                    <a href="../../home.html">
+                        <h3>Return to Home Page</h3>
+                    </a>
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <p>
+            <span id="last-updated">Last updated </span> • Site hosted with GitHub Pages
+        </p>
+    </footer>
+
+    <script src="/js/last-updated.js"></script>
+    <script>
+
+    const repoRelativePath = window.location.pathname.replace(/^\//, '');
+
+    updateLastUpdated({
+        elementId: 'last-updated',
+        owner: 'johnson-liu-code',
+        repo: 'johnson-liu-code.github.io',
+        filePath: repoRelativePath,
+        fallbackToNow: true
+    });
+    </script>
+    
+    <script>
+    document.querySelectorAll("nav a").forEach(link => {
+        // Compare just the pathname (so query‑strings or domain don’t matter)
+        if (link.pathname === window.location.pathname) {
+        link.classList.add("active");
+        }
+    });
+    </script>
+
+</body>
+</html>
