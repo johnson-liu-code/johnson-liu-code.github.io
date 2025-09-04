@@ -52,52 +52,120 @@
                     <p>
                         This mini jailbreak stress test dashboard is an app for stress testing 
                         large language models (LLMs) with custom and premade prompts gathered 
-                        from open-source projects. This tool allows for interactive monitoring 
-                        of attacks on various models and the visualization of these models' 
-                        performance in defending against such attacks. The app provides a 
-                        real-time display in the form of a prompt refusal table and graphs that 
-                        lets the user quickly spot successful jailbreaks from the provided prompts 
-                        along with jailbreaking trends that emerge from the use of a variety of 
-                        prompts across multiple LLMs.
+                        from open-source projects.
+                        
+                        This tool allows for interactive monitoring of attacks on various models 
+                        and the visualization of these models' performance in defending against 
+                        such attacks.
+                        
+                        The app provides a real-time display in the form of a prompt refusal 
+                        table and graphs that lets the user quickly spot successful jailbreaks 
+                        from the provided prompts along with jailbreaking trends that emerge from 
+                        the use of a variety of prompts across multiple LLMs.
                     </p>
                 </div>
                 <div class="project-header__img">
                     <img src="llm_jailbreak.png" alt="llm Jailbreak image">
+                    <figcaption style="text-align: center">
+                        <i>Figure generated with GPT-5.</i>
+                    </figcaption>
                 </div>
             </section>
 
             <section>
-                <p>
-                    Replace this...with more a more detailed description of the project.
-                    <br>
-                    <br>
-                    <br>
-                    text here blah blah blah blah blah blah blah blah.
-                    text here blah blah blah blah blah blah blah blah.
-                    text here blah blah blah blah blah blah blah blah.
-                    text here blah blah blah blah blah blah blah blah.
-                    text here blah blah blah blah blah blah blah blah.
-                </p>
+                <h3>Project Overview</h3>
+                <hr>
                 <ul>
-                    <li>Goal:<br>
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
+                    <li><b>Goal:</b><br>
+                        <ol>
+                            <li>
+                                Build transparent, reproducible evaluations of LLM capability and 
+                                safety (with a focus on jailbreak susceptibility).
+                            </li>
+                            <li>
+                                Create practical tools and write-ups that help students, researchers, 
+                                and engineers reason about model behavior.
+                            </li>
+                            <li>
+                                Contribute open resources (code, datasets, and reports) that advance 
+                                LLM alignment and safety.
+                            </li>
+                        </ol>
                     </li>
-                    <li>Current progress:<br>
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
+                    <li><b>Current progress:</b><br>
+                        <ol>
+                            <li>
+                                Implemented a Streamlit-based Jailbreak Stress-Test Dashboard with 
+                                multi-model runs, batch prompting, logging, and results tables.
+                            </li>
+                            <li>
+                                Organized a library of attack prompts and began benchmarking 
+                                success/refusal rates across commercial and open-weight models.
+                            </li>
+                            <li>
+                                Drafted portfolio copy and literature notes covering jailbreak 
+                                taxonomy, defenses, and evaluation methods.
+                            </li>
+                        </ol>
                     </li>
-                    <li>Future plans:<br>
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
-                        placeholder – placeholder – placeholder – placeholder
+                    <li><b>Future plans:</b><br>
+                        <ol>
+                            <li>
+                                Add automated red-teaming (model-generated attacks), attack families, 
+                                and per-model safety scorecards to the dashboard.
+                            </li>
+                            <li>
+                                Submit a prompt response dataset with evaluation scripts and baseline 
+                                metrics to JailbreakBench.
+                            </li>
+                            <li>
+                                Test defenses (prompt hardening, safety-tuned adapters, retrieval 
+                                guardrails) and publish a short report with findings.
+                            </li>
+                        </ol>
                     </li>
                 </ul>
+
+                </section>
+
+                <section>
+                <h3>Background on LLMs</h3>
+                <hr>
+                <p>
+                    Large language models are transformer-based neural networks with very large parameter 
+                    counts, trained with self-supervised learning on massive text corpora.
+
+                    Through self-attention mechanisms, they learn rich syntactic and semantic structure, 
+                    capturing which tokens matter within the context of a given piece of text and by how much.
+
+                    When prompted, they generate coherent text and can handle tasks such as engaging in dialogue, 
+                    question answering, summarization, classification, and translation.
+
+                    Because they're trained on both natural and constructed languages (e.g., programming languages), 
+                    many models can also generate and edit code.
+                    <br>
+                    <br>
+                    At their core, LLMs are probabilistic next-token predictors: given context, they model a 
+                    distribution over possible continuations for the text and decode from it.
+                    
+                    This simple objective, scaled to large data and computation, yields broad generalization.
+
+                    The base models can then be adapted, via prompting, fine-tuning, information and data 
+                    retrieval, or tool integration, to specialize for particular tasks with greater reliability.
+                    <br>
+                    <br>
+                    However, these same generative mechanisms create opportunities and corridors for attack.
+
+                    Carefully designed prompts can exploit model behavior and elicit outputs that violate safety 
+                    policies, a practice known as "jailbreaking."
+
+                    Understanding how such attacks steer LLM text generation is essential to reducing misuse.
+
+                    Despite ongoing progress, both leading commercial systems (e.g., GPT, Claude) and popular 
+                    open-weight models (e.g., Llama, Mistral) remain susceptible, motivating continued research 
+                    into robust alignment and defenses.
+                </p>
+
 
                 <br>
                 <br>
