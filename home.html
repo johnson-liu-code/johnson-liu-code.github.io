@@ -11,6 +11,25 @@
 
     <header>
         <div class="hero">
+            <!-- <pre id="ascii-cube" aria-label="Rotating ASCII cube banner"></pre>
+            <script>
+            (async () => {
+            const host = document.getElementById('ascii-cube');
+            try {
+                const res = await fetch('cube.json', { cache: 'no-store' });
+                const data = await res.json();
+                const frames = (data.frames || []).sort((a,b)=> (a.number||0)-(b.number||0));
+                if (!frames.length) { host.textContent = 'No frames found.'; return; }
+                let i = 0; const fps = 4, interval = 1000 / fps;
+                let t = setInterval(()=>{ host.textContent = frames[i++ % frames.length].asc_art; }, interval);
+                host.addEventListener('mouseenter', ()=> (t && clearInterval(t), t=null));
+                host.addEventListener('mouseleave', ()=> (!t && (t=setInterval(()=>{ host.textContent = frames[i++ % frames.length].asc_art; }, interval))));
+            } catch (e) {
+                host.textContent = 'Failed to load ASCII cube.';
+            }
+            })();
+            </script> -->
+
             <img src="home_images/ising_loop.gif" alt="ising_evolution_animation">
             <div class="hero-text">
                 <h1>Johnson Liu</h1>
