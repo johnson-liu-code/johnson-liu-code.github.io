@@ -303,3 +303,21 @@ footer {
   margin-top: 0.2em;     /* small gap between title and subtitle */
   font-weight: normal;  /* optional: makes it lighter */
 }
+
+.pdf-container {
+  /* Set a relative container that maintains an aspect ratio */
+  position: relative;
+  width: 100%;
+  padding-bottom: 75%; /* 4:3 Aspect Ratio (adjust as needed) */
+  height: 0;
+  overflow: hidden;
+}
+
+.pdf-container iframe {
+  /* Position and size the iframe to fill the container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
